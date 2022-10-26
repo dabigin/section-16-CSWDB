@@ -24,14 +24,27 @@
 // 10-65 ADULT $20
 // 65+ SENIOR $10
 
-const age = 89;
+// const age = 89;
 
-if (age < 5) {
-  console.log("You are a baby. You get in for free");
-} else if (age < 10) {
-  console.log("You are a child, you get in for $10");
-} else if (age < 65) {
-  console.log("You are an adult. You pay $20");
+// if (age < 5) {
+//   console.log("You are a baby. You get in for free");
+// } else if (age < 10) {
+//   console.log("You are a child, you get in for $10");
+// } else if (age < 65) {
+//   console.log("You are an adult. You pay $20");
+// } else {
+//   console.log("You are a Senior. You Pay $10");
+// }
+
+const password = prompt("please enter a new password");
+// Password must be 6+ Characters
+if (password.length >= 6) {
+  // Password cannot include space
+  if (password.indexOf(" ") === -1) {
+    console.log("Good Job, no spaces");
+  } else {
+    console.log("Password cannot contain spaces");
+  }
 } else {
-  console.log("You are a Senior. You Pay $10");
+  console.log("Password is not 6tes characters long");
 }
